@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232323"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:text="TicTacToe"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac1"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="15dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTac5"
+        app:layout_constraintEnd_toStartOf="@+id/ticTac3"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac3"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac4"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="13dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTac7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTac1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac7"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTac4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac8"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintStart_toEndOf="@+id/ticTac7"
+        app:layout_constraintTop_toBottomOf="@+id/ticTac5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac9"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTac6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac5"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="13dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTac8"
+        app:layout_constraintEnd_toStartOf="@+id/ticTac6"
+        app:layout_constraintStart_toEndOf="@+id/ticTac4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ticTac6"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:background="#CDCDCD"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toTopOf="@+id/ticTac9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTac3" />
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticTac7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="36dp"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="New Game" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
