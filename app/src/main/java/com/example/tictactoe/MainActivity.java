@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     protected void switchPlayer() {
         TextView turnText = findViewById(R.id.turnText);
-        if(determinePlayer() == "O" || turnText.getText().length() == 0) {
+        if(determinePlayer().equals("O") || turnText.getText().length() == 0) {
             turnText.setText("Player X's Turn");
         }
 
-        else if(determinePlayer() == "X"){
+        else if(determinePlayer().equals("X")) {
             turnText.setText("Player O's Turn");
         }
     }
